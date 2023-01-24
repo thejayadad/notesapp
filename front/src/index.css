@@ -6,6 +6,10 @@
 
   body{
     font-family: cursive;
+    overflow-x: hidden;
+    background: black;
+    color: white;
+
   }
 
   /**NAVBAR START**/
@@ -20,6 +24,54 @@
     margin: auto;
     height: 40px;
     background: orange;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.nav-link{
+  text-decoration: none;
+  cursor: pointer;
+}
+  /**NAVBAR END**/
+
+/**LOGIN PAGE START**/
+.login-header{
+  text-align: center;
+}
+.login-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  body{
+    background: orange;
   }
 
-  /**NAVBAR END**/
+}
+
+/**LOGIN PAGE END**/
+
+
+
+/**MAIN SECTION START**/
+
+section{
+  width: 500px;
+  margin: auto;
+  height: 100vh;
+
+}
+
+
+/**MAIN SECTION END**/
