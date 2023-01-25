@@ -60,16 +60,15 @@ export default function Login({setIsLogin}) {
                     placeholder="Password" required value={user.password}
                     autoComplete="true"
                     onChange={onChangeInput} />
-                    <br/>
-                    <button type="submit">Login</button>
-                    <p>You don't have an account?
+                    <button className='main' type="submit">Login</button>
+                    <p>Need an account?
                         <span onClick={() => setOnLogin(true)}> Register Now</span>
                     </p>
                     <h3>{err}</h3>
                 </form>
            </div>
            <div className="register create-note" style={style}>
-           <h2>Register</h2>
+           <h2 className='login-header'>Register</h2>
                 <form onSubmit={registerSubmit}>
                     <input type="text" name="name" id="register-name"
                     placeholder="User Name" required value={user.name}
@@ -83,7 +82,7 @@ export default function Login({setIsLogin}) {
                     placeholder="Password" required value={user.password}
                     autoComplete="true" onChange={onChangeInput} />
 
-                    <button type="submit">Register</button>
+                    <button className='main' type="submit">Register</button>
                     <p>You have an account?
                         <span onClick={() => setOnLogin(false)}> Login Now</span>
                     </p>
